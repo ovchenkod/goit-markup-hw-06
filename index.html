@@ -391,13 +391,40 @@
       </div>
     </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop !!!!!!!" data-modal>
       <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
               <svg class="close-btn-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#close-btn-icon">
               </use></svg>
             </button>
+            <form class="modal-form">
+              <p class="modal-form-maim-text">Leave your contacts and we will call you back</p>
+              <label class="modal-form-field">
+                <span class="modal-form-h">Name</span>
+                <input type="text" name="user-name" class="modal-form-input" required/>
+              </label>
+              <label class="modal-form-field">
+                <span class="modal-form-h">Phone</span>
+                <input type="tel" name="user-phone" class="modal-form-input" required/>
+              </label>
+              <label class="modal-form-field">
+                <span class="modal-form-h">Email</span>
+                <input type="email" name="user-email" class="modal-form-input" required/>
+              </label>
+              <label for="commit" class="modal-form-field">
+              <span class="modal-form-h">Comment</span>
+              <textarea name="user-commit" 
+                id="commit" 
+                cols="30" 
+                rows="10"
+                class="modal-form-commit"
+                placeholder="Text input"></textarea>
+              </label>
+              <input id="agree-check" type="checkbox" name="user-policy" class="modal-form-agree"/>
+              <label for="agree-check" class="modal-form-agree-check">I accept the terms and conditions of the <a href="">Privacy Policy</label>
+                <bottom type="submit" class="modal-form-bottom">Send</bottom>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
