@@ -241,7 +241,6 @@ font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.04em;
 cursor: pointer; 
-border: none;
 text-align: center;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
 0px 2px 1px rgba(0, 0, 0, 0.08), 
@@ -734,7 +733,7 @@ transform: translate(-50%, -50%);
 width: 408px;
 height: 576px;
 background-color: #FCFCFC;
-padding: 72px 24px 24px 24px;
+padding: 52px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -798,12 +797,109 @@ color: #8E8F99;
 margin-bottom: 4px;
 }
 
+.modal-form-input-wrapper {
+    position: relative;
+}
+
+.modal-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translate(0, -50%);
+}
+
+
+
 .modal-form-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+width: 100%;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 background-color:  #FCFCFC;
 padding-left: 38px;
 margin-bottom: 8px;
 }
+
+.modal-form-input:focus {
+    outline: none;
+    border: #4D5AE5;
+}
+
+.modal-form-commit {
+resize: none;
+width: 100%;
+height: 100%;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+font-family: inherit;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+background-color:  #FCFCFC;
+color: rgba(117, 117, 117, 0.5);
+padding: 8px 16px;
+margin-bottom: 16px;
+outline: none;
+}
+
+.modal-form-agree-check {
+display: flex;
+font-family: inherit;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: #757575;
+margin-right: 16px;
+margin-bottom: 24px;
+}
+
+.modal-form-agree-check::before {
+content: "";
+display: block;
+width: 14px;
+height: 14px;
+border: 1px solid #000;
+cursor: pointer;
+border-radius: 2px;
+margin-right: 10px;
+}
+
+.modal-form-agree:checked + .modal-form-agree-check::before {
+    background-color: #4D5AE5;
+    box-shadow: inset 0 0 0 4px rgba(255, 255, 255);
+}
+
+
+.modal-form-agree:focus + .modal-form-agree-check::before {
+   outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.modal-form-bottom {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; 
+padding:  16px 32px;
+margin-left: auto;
+margin-right: auto;
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+text-decoration: none;
+text-transform: none;
+width: 169px;
+height: 56px;
+background-color: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer; 
+}
+
+
+
+

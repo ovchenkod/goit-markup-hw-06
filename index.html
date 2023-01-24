@@ -402,27 +402,43 @@
               <p class="modal-form-maim-text">Leave your contacts and we will call you back</p>
               <label class="modal-form-field">
                 <span class="modal-form-h">Name</span>
+                <span class="modal-form-input-wrapper">
+                <svg class="modal-form-input-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
                 <input type="text" name="user-name" class="modal-form-input" required/>
+                </span>
               </label>
               <label class="modal-form-field">
                 <span class="modal-form-h">Phone</span>
+                <span class="modal-form-input-wrapper">
+                  <svg class="modal-form-input-icon" width="13" height="13">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg>
                 <input type="tel" name="user-phone" class="modal-form-input" required/>
+                </span>
               </label>
               <label class="modal-form-field">
                 <span class="modal-form-h">Email</span>
+                <span class="modal-form-input-wrapper">
+                  <svg class="modal-form-input-icon" width="15" height="12">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
                 <input type="email" name="user-email" class="modal-form-input" required/>
+                </span>
               </label>
               <label for="commit" class="modal-form-field">
               <span class="modal-form-h">Comment</span>
               <textarea name="user-commit" 
                 id="commit" 
-                cols="30" 
-                rows="10"
+                cols="" 
+                rows="6"
                 class="modal-form-commit"
                 placeholder="Text input"></textarea>
               </label>
-              <input id="agree-check" type="checkbox" name="user-policy" class="modal-form-agree"/>
-              <label for="agree-check" class="modal-form-agree-check">I accept the terms and conditions of the <a href="">Privacy Policy</label>
+              <input id="agree-check" type="checkbox" name="user-policy" class="modal-form-agree visually-hidden"/>
+              <label for="agree-check" class="modal-form-agree-check">I accept the terms and conditions of the&nbsp;<a class="policy-note"
+                 href="">Privacy Policy</a></label>
                 <bottom type="submit" class="modal-form-bottom">Send</bottom>
             </form>
         </div>
