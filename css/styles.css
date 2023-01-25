@@ -422,6 +422,7 @@ padding-bottom: 8px;
 .logo-block {
 background-color: #2E2F42;
 height: 310px;
+margin-right: 120px;
 }
 
 .logo-footer {
@@ -660,11 +661,11 @@ display: flex;
     
 .social-footer {
 padding-top: 100px;
+margin-right: 80px;
 }
 
 .footer-block {
 display: flex;
-gap: 120px;
 }
 
 .social-footer-title {
@@ -679,9 +680,6 @@ color: #FFFFFF;
 
 .soc-list {
 display: flex;
-
-    /* justify-content: center; */
-
 align-items: center;
 gap: 16px;
 }
@@ -733,16 +731,19 @@ padding-bottom: 16px;
 
 
 .subscribe-input {
-width: 100%;
+width: 264px;
 height: 40px;
 background-color: #2E2F42;;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
-}
-
-.sub-btn-block {
-    
+padding: 16px 8px;
+font-family: inherit;
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {
@@ -750,6 +751,7 @@ display: flex;
 align-items: center;
 text-align: center;
 padding: 8px 24px;
+min-width: 170px;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -758,23 +760,37 @@ color: #FFFFFF;
 background: #4D5AE5;
 border-radius: 4px;
 outline: none;
+cursor: pointer;
 letter-spacing: 0.04em;
-
-/* position: relative;
-left: 77.5%;
-right: 11.04%;
-top: 45.16%;
-bottom: 41.94%; */
+transition: background-color var(--transition-duration-funct),
+color var(--transition-duration-funct),
+box-shadow var(--transition-duration-funct);
 }
 
 .subscribe-button:hover,
 .subscribe-button:focus {
-    background-color: #fff;
+    outline: none;
+background-color: #fff;
 color: #4D5AE5;
 }
 
+.sub-btn-block {
+position: relative;
+    }
+    
+
 .subscribe-btn-icon {
-    position: absolute;
+position: absolute;
+top: 10px;
+left: 0;
+margin-left: 116px;
+fill: #fff;
+transition: fill var(--transition-duration-funct),
+}
+
+.subscribe-btn-icon:hover,
+.subscribe-btn-icon:focus {
+    fill: #404BBF;
 }
 
 /* BACKDROP */
@@ -860,8 +876,8 @@ fill:#fff;
 }
 
 .modal-form-h {
-    display: block;
-    font-family: inherit;
+display: block;
+font-family: inherit;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.33;
@@ -875,13 +891,11 @@ margin-bottom: 4px;
 }
 
 .modal-form-input-icon {
-    position: absolute;
-    top: 50%;
-    left: 19px;
-    transform: translate(0, -50%);
+position: absolute;
+top: 50%;
+left: 19px;
+transform: translate(0, -50%);
 }
-
-
 
 .modal-form-input {
 width: 100%;
@@ -894,8 +908,8 @@ margin-bottom: 8px;
 }
 
 .modal-form-input:focus {
-    outline: none;
-    border: #4D5AE5;
+outline: none;
+border: #4D5AE5;
 }
 
 .modal-form-commit {
