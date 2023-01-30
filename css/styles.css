@@ -972,13 +972,13 @@ border: 1px solid #000;
 cursor: pointer;
 border-radius: 4px;
 margin-right: 10px;
-background-repeat: no-repeat;
 }
 
 .modal-form-agree:checked + .modal-form-agree-check::before {
-background-image: url(/images/galoch\ \(1\).svg);
+background-image: url(/images/galochka.svg);
 background-color: #404BBF;
 background-position: center;
+background-repeat: no-repeat;
 border: none;
 outline: none;
 }
