@@ -256,7 +256,7 @@ box-shadow var(--transition-duration-funct);
 
 .modal-btn:hover,
 .modal-btn:focus {
-    outline: none;
+outline: none;
 background-color: #fff;
 color: #4D5AE5;
     }
@@ -724,9 +724,9 @@ padding-bottom: 16px;
 }
 
 .form-input-btn {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+display: flex;
+align-items: center;
+gap: 24px;
 }
 
 
@@ -975,7 +975,7 @@ margin-right: 10px;
 }
 
 .modal-form-agree:checked + .modal-form-agree-check::before {
-background-image: url(./images/galochka.svg);
+background-image: url(../images/galochka.svg);
 background-color: #404BBF;
 background-position: center;
 background-repeat: no-repeat;
