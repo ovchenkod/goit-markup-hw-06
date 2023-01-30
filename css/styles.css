@@ -42,8 +42,8 @@ border-bottom: 1px solid #E7E9FC;
 }
 
 section {
-padding-top: 120px;
-padding-bottom: 72px;
+padding-top: 72px;
+padding-bottom: 120px;
     }
 
 footer {
@@ -424,14 +424,12 @@ padding-bottom: 8px;
     
 .logo-block {
 background-color: #2E2F42;
-height: 310px;
 margin-right: 120px;
 }
 
 .logo-footer {
 display: flex;
 align-items: center;
-padding-top: 100px;
 padding-left: 0px;
 margin-bottom: 16px;
 font-family: "Raleway", sans-serif;
@@ -537,7 +535,9 @@ margin: 0;
 
 .presentation-list:hover,
 .presentation-list:focus {
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+ 0px 1px 1px rgba(46, 47, 66, 0.16), 
+ 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .presentation-shadow {
@@ -663,12 +663,13 @@ display: flex;
 }
     
 .social-footer {
-padding-top: 100px;
 margin-right: 80px;
 }
 
 .footer-block {
 display: flex;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .social-footer-title {
@@ -710,10 +711,6 @@ border-radius: 50%;
 }
 
 /* SUBSCRIBE-FORM */
-
-.subscribe-form {
-    padding-top: 100px;
-}
 
 .subscribe-h {
 font-family: inherit;
@@ -841,8 +838,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 8px 8px;
-width: 30px;
-height: 30px;
+width: 24px;
+height: 24px;
 border-radius: 50%;
 background-color: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
@@ -954,6 +951,7 @@ outline: none;
 border-color: #4D5AE5;}
 
 .modal-form-agree-check {
+    /* outline: 1px solid tomato; */
 display: flex;
 font-family: inherit;
 font-weight: 400;
@@ -968,11 +966,11 @@ margin-bottom: 24px;
 .modal-form-agree-check::before {
 content: "";
 display: block;
-width: 14px;
-height: 14px;
+width: 16px;
+height: 16px;
 border: 1px solid #000;
 cursor: pointer;
-border-radius: 2px;
+border-radius: 4px;
 margin-right: 10px;
 background-repeat: no-repeat;
 background-position: center;
@@ -981,6 +979,7 @@ background-position: center;
 .modal-form-agree:checked + .modal-form-agree-check::before {
 background-image: url(/images/galoch\ \(1\).svg);
 background-color: #404BBF;
+background-position: center;
 border: none;
 outline: none;
 }
@@ -990,7 +989,7 @@ outline: none;
 outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.modal-form-bottom {
+.modal-form-button {
 display: flex;
 justify-content: center;
 align-items: center;
