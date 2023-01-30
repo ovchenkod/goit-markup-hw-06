@@ -975,7 +975,7 @@ margin-right: 10px;
 }
 
 .modal-form-agree:checked + .modal-form-agree-check::before {
-background-image: url(/images/galochka.svg);
+background-image: url(./images/galochka.svg);
 background-color: #404BBF;
 background-position: center;
 background-repeat: no-repeat;
