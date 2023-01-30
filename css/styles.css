@@ -973,7 +973,6 @@ cursor: pointer;
 border-radius: 4px;
 margin-right: 10px;
 background-repeat: no-repeat;
-background-position: center;
 }
 
 .modal-form-agree:checked + .modal-form-agree-check::before {
