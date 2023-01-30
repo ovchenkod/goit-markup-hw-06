@@ -972,6 +972,7 @@ border: 1px solid #000;
 cursor: pointer;
 border-radius: 4px;
 margin-right: 10px;
+position: relative;
 }
 
 .modal-form-agree:checked + .modal-form-agree-check::before {
@@ -979,9 +980,9 @@ background-image: url(../images/galochka.svg);
 background-color: #404BBF;
 background-position: center;
 background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
+position: absolute;
+top: 0;
+left: 0;
 border: none;
 outline: none;
 }
