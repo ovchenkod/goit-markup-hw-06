@@ -842,7 +842,8 @@ height: 24px;
 border-radius: 50%;
 background-color: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
-transition: border-color var(--transition-duration-funct);
+transition: background-color var(--transition-duration-funct),
+border-color var(--transition-duration-funct);
 }
 
 .modal-close-btn:hover,
@@ -852,9 +853,6 @@ background-color: #4D5AE5;
 }
 
 .close-btn-icon {
-/* position: absolute;
-top: 10;
-right: 30; */
 fill: black;
 transition: fill var(--transition-duration-funct);
 }
