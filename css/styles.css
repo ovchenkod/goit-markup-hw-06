@@ -182,22 +182,15 @@ margin-left: auto;
     background-color: var(--primery-text-color);
     text-align: center;
     width: 100%; 
-    height: 432px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 72px  52px;
-    background-image: linear-gradient( to right, 
-    var(--hero-background-rgba), 
-    var(--hero-background-rgba) ),
-     url(../images/hero-bg-mob.jpg);
     }
         
 .hero-title {
 margin-top: 0;
-margin-bottom: 0;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
@@ -245,8 +238,6 @@ color: #4D5AE5;
     /* секция BOX преимущества */
         
 .box {
-display: flex;
-gap: 24px;
 margin: 0;
 padding-left: 0px;
  }
@@ -1114,18 +1105,26 @@ line-height: 0;
         /* .backdrop
             /* width: 288px;
             height: 623px;
-        } */ */
+        } */ 
          
+.hero {
+    height: 432px;
+    padding: 72px  52px;
+    background-image: linear-gradient( to right, 
+    var(--hero-background-rgba), 
+    var(--hero-background-rgba) ),
+     url(../images/hero-bg-mob.jpg);
+}
+
  @media screen and (min-device-pixel-ratio: 2), 
- (min-resolution: 2dppx), 
- (min-resolution: 192dpi) {
+ (min-resolution: 2dppx), (min-resolution: 192dpi) {
  .hero {
    background-image:   linear-gradient( to right, 
     var(--hero-background-rgba), 
     var(--hero-background-rgba) ),
      url(../images/hero-bg-mob2x.jpg);
     }
-}
+ }
 
 .h1.hero-title {
     margin: 0;
@@ -1133,11 +1132,38 @@ line-height: 0;
 
  .hero-title {
     font-size:  36px;
-    /* padding-left:
-    padding-right: 52px; */
+    max-width: 208px;
+    margin-bottom: 72px;
  }
 
-        }
+.icon-list {
+    display: none;
+}
+.main-box {
+    padding-top: 96px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+ .box-title {
+font-weight: 700;
+font-size: 36px;
+text-align: center;
+}
+
+.box-text {
+    font-weight: 500;
+    }
+
+
+    
+}
+
+
+ /* =======TABLET FIRST======= */
 
 @media screen and (max-width: 768px)
 {     
@@ -1155,36 +1181,35 @@ line-height: 0;
 .container {
     max-width: 768px;
 }
-    .mob-menu, .mobile-menu {
-        display: none;
+.mob-menu, .mobile-menu {
+    display: none;
     }
 
-    .header-main {
-        display: flex;
-        align-items: center;
-        gap: 120px;
-            } 
+.header-main {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+        } 
 
-    .logo {
-        display: flex;
-        align-items: center;}
+.logo {
+display: flex;
+align-items: center;}
 
         /* .logo-second {
             margin-right: 76px;
         }
      */
 
-    .site-nav {
-        display: flex;
-        align-items: center;
+.site-nav {
+display: flex;
+align-items: center;
         /* position: relative; */
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
 color: blue;
  } 
-
-
     .auth-nav {
         /* display: flex; */
     }
@@ -1194,7 +1219,43 @@ color: blue;
         }
         .site-nav .item:last-child {
         margin-right: 0;
-        } }
+        }
+    
+        .hero {
+            padding: 112px  136px;
+            background-image: linear-gradient( to right, 
+            var(--hero-background-rgba), 
+            var(--hero-background-rgba) ),
+             url(../images/hero-bg-tablet.jpg);
+        }
+        
+         @media screen and (min-device-pixel-ratio: 2), 
+         (min-resolution: 2dppx), (min-resolution: 192dpi) {
+         .hero {
+           background-image:   linear-gradient( to right, 
+            var(--hero-background-rgba), 
+            var(--hero-background-rgba) ),
+             url(../images/hero-bg-tablet2x.jpg);
+            }
+         }
+        
+    
+ .hero-title {
+    font-size:  56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+ }
+
+ .box {
+    flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px 72px;
+ }
+
+ .box-item {
+    flex-basis: calc((100% - 24px) / 2);
+ }
+ }
 
 
 @media screen and (min-width: 1158px) {
@@ -1218,6 +1279,42 @@ margin-left: 40px;
     .logo-second {
         margin-right: 120px;
     }
+
+    .hero {
+        padding: 118px  118px;
+        background-image: linear-gradient( to right, 
+        var(--hero-background-rgba), 
+        var(--hero-background-rgba) ),
+         url(../images/hero-bg-desktop.jpg);
+    }
+    
+     @media screen and (min-device-pixel-ratio: 2), 
+     (min-resolution: 2dppx), (min-resolution: 192dpi) {
+     .hero {
+       background-image:   linear-gradient( to right, 
+        var(--hero-background-rgba), 
+        var(--hero-background-rgba) ),
+         url(../images/hero-bg-desktop2x.jpg);
+        }
+     }
+
+.hero-title {
+font-size:  56px;
+max-width: 496px;
+margin-bottom: 48px;
+}
+
+.icon-list {
+    display: flex;
+}
+
+.box {
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+
+
 
 }
 
