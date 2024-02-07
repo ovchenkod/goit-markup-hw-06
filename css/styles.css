@@ -183,14 +183,10 @@ padding-top: 188px;
 padding-bottom: 188px;
 background-color: var(--primery-text-color);
 text-align: center;
-max-width: 1440px;
-height: 600px;
+/* max-width: 1440px; */
+/* height: 600px; */
 margin-left: auto;
 margin-right: auto;
-background-image: linear-gradient( to right, 
-var(--hero-background-rgba), 
-var(--hero-background-rgba) ),
- url(../images/people-office.jpg);
 background-position: center;
 background-repeat: no-repeat;
 }
@@ -1114,6 +1110,13 @@ line-height: 0;
             /* width: 288px;
             height: 623px;
         } */
+
+.hero {
+        background-image: linear-gradient( to right, 
+        var(--hero-background-rgba), 
+        var(--hero-background-rgba) ),
+         url(../images/hero-bg-mob.jpg);
+
 }
 }
 
