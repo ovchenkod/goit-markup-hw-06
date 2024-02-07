@@ -1106,19 +1106,19 @@ padding: 0;
 line-height: 0;
         }
 
-        .backdrop {
+        .backdrop
             /* width: 288px;
             height: 623px;
         } */
 
 .hero {
+    height: 432px;
         background-image: linear-gradient( to right, 
         var(--hero-background-rgba), 
         var(--hero-background-rgba) ),
          url(../images/hero-bg-mob.jpg);
-
 }
-}
+        }
 
 @media screen and (max-width: 768px)
 {     
