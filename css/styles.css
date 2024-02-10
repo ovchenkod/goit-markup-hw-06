@@ -1106,11 +1106,6 @@ text-align: center;
                         .social-footer {
                            padding-top: 102px;
                             }
-
-
- .footer-block {
-/* display: flex; */
-}
                                 
 .social-footer-title {
  margin: 0;
@@ -1179,6 +1174,7 @@ border-color: #4D5AE5;
    .subscribe-button {
     margin-left: 77px;
     }
+
                          
 }
 
@@ -1301,10 +1297,39 @@ row-gap: 72px;
                 height: 420px;
             }
         
-            .presentation-list {
-                width: calc((100% - 24px) / 2);
-            }
+.presentation-list {
+width: calc((100% - 24px) / 2);
+}
 
+.social-place {
+    height: inherit;
+}
+
+.footer-block {
+display: flex; 
+flex-direction: row;
+flex-wrap: wrap;
+row-gap: 72px;
+column-gap: 24px;
+padding-left: 108px;
+    }
+.logo-footer{
+padding-left: 0px;
+}
+
+.social-footer-title {
+    padding-left: 0px;
+}
+
+.subscribe-h {
+    padding: 0;
+}
+.subscribe-input {
+    margin-left: 0;
+}
+.subscribe-button {
+    margin-left: 0;
+}
  }
 
 
