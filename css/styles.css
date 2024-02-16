@@ -1442,45 +1442,40 @@ width: 264px;
 margin-right: 120px;
  }
 
-.logo-footer {
-padding-top: 100px;
+/* .logo-footer {
 padding-left: 0px;
-margin-bottom: 16px;
 width: 44px;
-   }
+   } */
 
  .copy-text {
 padding: 0px;
 }
-    
-.social-footer {
-padding-top: 100px;
-margin-right: 80px; 
-}
-.subscribe-form {
-margin-right: auto;
-}
-                                    
-   .subscribe-h {
-margin: 0;
-padding-top: 100px;
- }  
+                                                                  
+ .footer-block {
+flex-wrap: nowrap;
+padding-left: 0;
+gap: 0;
+        }    
 
- /* .footer-block {
- display: flex;
- /* } */
-                                            
+.social-footer {
+padding-left: 0px;
+margin-right: 80px;
+}
+        
+   .subscribe-h {
+margin-bottom: 16px;
+padding-top: 0;
+ }  
+                                         
  .form-input-btn {
 display: flex; 
 align-items: center;
 gap: 24px;}
 
  .subscribe-input {
-margin-bottom: 16px;
-margin-left: 16px;
+margin: 0;
  }
-                                                              
-                                                                
+                                                        
  
 }            
 
