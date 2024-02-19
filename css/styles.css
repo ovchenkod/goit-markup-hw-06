@@ -71,7 +71,7 @@ text-transform: uppercase;
 }
      /* site-nav */
 
-    .site-nav, .auth-nav {
+.site-nav, .auth-nav {
 margin-top: 0;
 margin-bottom: 0;
 padding: 0;
@@ -102,8 +102,8 @@ transition: color var(--transition-duration-funct);
         
 .auth-nav .link:hover, 
 .auth-nav .link:focus {
-color: blue;
-}  */
+color: rgba(151, 71, 255, 1);
+}  
         
 /* Container header-nav */
 
@@ -123,36 +123,8 @@ position: relative;
 position: relative;
 }
 
-.active-one::after {
-content: "";
-position: absolute;
-display: block;
-left: 0;
-bottom: 0;
-width: 48px;
-height: 4px;
-background-color: #404BBF;
-border-radius: 2px;
-bottom: -1px;
-    }
 
 
-.active::after {
-content: "";
-position: absolute;
-display: block;
-left: 0;
-bottom: 0;
-width: 66px;
-height: 4px;
-background-color: #404BBF;
-border-radius: 2px;
-}
-
-.auth-nav {
-display: flex;
-align-items: center;
-margin-left: auto;
 }  */
 
                    /* hero */
@@ -188,7 +160,7 @@ flex-direction: row;
 align-items: center;
 padding:  16px 32px;
 color: #fff;
-background-color: #4D5AE5;
+background-color:rgba(151, 71, 255, 1);
 font-family: inherit;
 min-width: 170px;
 font-weight: 500;
@@ -210,8 +182,8 @@ box-shadow var(--transition-duration-funct);
 
 .modal-btn:hover,
 .modal-btn:focus {
-background-color: #fff;
-color: #4D5AE5;
+background-color: rgba(64, 75, 191, 1);
+color: #fff;
     }
         
     /* секция BOX преимущества */
@@ -531,15 +503,12 @@ opacity: 1;
 visibility: visible;
 pointer-events: auto;
 } */
-    
 
 .modal {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 408px;
-min-height: 584px; 
 background-color: #FCFCFC;
 padding: 72px 24px 24px 24px; 
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -586,7 +555,7 @@ fill:  rgba(255, 255, 255, 1);
 }
 
 
-/*========= backdrop is-open*===============/ 
+/* ========= backdrop is-open*===============/  */
 
 .modal-main-text {
 font-family: inherit;
@@ -719,9 +688,7 @@ background-color: #404bbf;
 border: none;  
 fill: #F4F4FD;
 }
-
-
-        
+      
 .modal-form-button {
 display: block;
 justify-content: center;
@@ -758,22 +725,12 @@ color: #4D5AE5;
  /* =======MOBILE FIRST======= */
 
 
- /* .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    /* outline: 2px solid tomato; */
-    
-
-
-
-    @media screen and (min-width: 320px) { 
-    .container {
-        max-width: 320px;
+@media screen and (min-width: 320px) { 
+.container {
+max-width: 320px;
     }
 
-    .header-nav {
+.header-nav {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -814,7 +771,7 @@ cursor: pointer;
     pointer-events: none;
 }
 
-/* .mob-menu.is-open {
+ /* .mob-menu.is-open {
 opacity: 1;
 visibility: visible;
 pointer-events: auto;
@@ -1138,7 +1095,11 @@ justify-content: center;
 .subscribe-input:focus { 
 border-color: #4D5AE5;
    }
-                         
+
+.modal {
+width: 288px;
+min-height: 623px; 
+}
 }
 
 
@@ -1210,8 +1171,34 @@ padding-bottom: 24px;}
 .site-nav {
 display: flex;
 align-items: center;
-        /* position: relative; */
+position: relative; 
 }
+
+.active-one::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 48px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    bottom: -1px;
+        }
+    
+    
+    .active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 66px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -1219,9 +1206,14 @@ color: blue;
  } 
 
  .cont-tel {
-    display: block;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
  }
+
+ /* display: block;
+ gap: 12px;
+} */
 
 .site-nav .item {
 margin-right: 40px;
@@ -1229,6 +1221,7 @@ margin-right: 40px;
 .site-nav .item:last-child {
 margin-right: 0;
 }
+
     
 .hero {
 padding: 112px  0;
@@ -1247,8 +1240,7 @@ var(--hero-background-rgba),
 var(--hero-background-rgba) ),
 url(../images/hero-bg-tablet2x.jpg);
 }
-}
-        
+}   
     
  .hero-title {
     font-size:  56px;
@@ -1336,6 +1328,11 @@ margin-left: 0;
 .subscribe-button {
 margin-left: 0;
 }
+
+.modal { 
+width: 408px;
+min-height: 584px; }
+
  }
 
 
@@ -1362,7 +1359,10 @@ display: flex;
 margin-left: 40px;
     } 
 
-    .hero {
+.auth-nav .link {
+font-size: 16px;}
+
+.hero {
 padding: 188px 0;
 width: 1190px;
 background-image: linear-gradient( to right, 
